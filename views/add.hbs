@@ -1,0 +1,22 @@
+<h2>Add new course now!</h2>
+<form action="/add" method="POST">
+    <div class="input-field">
+        <input placeholder="Введите название курса" id="title" name="title" type="text" class="validate" required>
+        <label for="title">Название курса</label>
+        <span class="helper-text" data-error="Не указана название"></span>
+    </div>
+
+    <div class="input-field">
+        <input placeholder="Сколько стоит" id="price" name="price" type="text" class="validate" required min="1">
+        <label for="price">Цена курса</label>
+        <span class="helper-text" data-error="Не указана цена курса"></span>
+    </div>
+
+    <div class="input-field">
+        <input placeholder="Пиктограмма курса (url)" id="img" name="img" type="text" class="validate" required>
+        <label for="img">URL IMG</label>
+        <span class="helper-text" data-error="Не указана картинка"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Опубликовать курс!</button>
+</form>
